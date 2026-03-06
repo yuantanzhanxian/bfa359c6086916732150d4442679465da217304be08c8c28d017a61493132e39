@@ -3,9 +3,8 @@ name: yuantanzhanxian
 on:
   workflow_dispatch:
   schedule:
-    - cron: '56 5/6 * * *'
-
-jobs:  # 30728
+    - cron: '2 5/6 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -13,14 +12,12 @@ jobs:  # 30728
       - uses: actions/checkout@v4
       - name: yuantanzhanxian
         env:
-          fxr4: ${{ secrets.fxr4 }}
+          uz07655: ${{ secrets.uz07655 }}
         run: |
-          echo $fxr4 | jq -r .cg07 | /bin/bash
-          echo $xuy35182 | jq -r .ejxs4 | /bin/bash
-          echo $znng814 | jq -r .ohblq63 | /bin/bash
-          echo $p86 | jq -r .mp1 | /bin/bash
-          echo $oarf94205 | jq -r .yrjrx311 | /bin/bash
-          echo $x2 | jq -r .s45 | /bin/bash
-          echo $m61 | jq -r .opbbw899 | /bin/bash
-          echo $f9 | jq -r .wlpj6 | /bin/bash
+          echo $uz07655 | jq -r .xht1 | /bin/bash
+          echo $tl597 | jq -r .l4 | /bin/bash
+          echo $uew2 | jq -r .iauj0 | /bin/bash
+          echo $ks36432 | jq -r .hiuv2 | /bin/bash
+          echo $nktjc82 | jq -r .lyzrx1 | /bin/bash
+          echo $mn76534 | jq -r .spq053 | /bin/bash
 
