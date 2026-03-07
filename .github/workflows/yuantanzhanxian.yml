@@ -1,8 +1,9 @@
 name: yuantanzhanxian
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '13 5/6 * * *'
+    - cron: '0 5/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,16 +12,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: yuantanzhanxian
         env:
-          vrix685: ${{ secrets.vrix685 }}
+          o365: ${{ secrets.o365 }}
         run: |
-          echo $vrix685 | jq -r .qo21516 | /bin/bash
-          echo $m66692 | jq -r .pqiw6652 | /bin/bash
-          echo $sxal11 | jq -r .rvd43279 | /bin/bash
-          echo $w059 | jq -r .aov9 | /bin/bash
-          echo $vjwo55 | jq -r .xxcz72 | /bin/bash
-          echo $fhm04 | jq -r .injcg30529 | /bin/bash
-          echo $kkca7520 | jq -r .m10616 | /bin/bash
-          echo $xl63 | jq -r .ib1 | /bin/bash
-          echo $swg95594 | jq -r .s26 | /bin/bash
-          echo $dxcof71276 | jq -r .lv313 | /bin/bash
+          echo $o365 | jq -r .jgu59 | /bin/bash
+          echo $g5293 | jq -r .ai4 | /bin/bash
+          echo $okhu9 | jq -r .vdpq087 | /bin/bash
+          echo $bfds4 | jq -r .s5549 | /bin/bash
+          echo $w48225 | jq -r .aa39675 | /bin/bash
+          echo $dvo755 | jq -r .zdik91 | /bin/bash
+          echo $voy970 | jq -r .snim37377 | /bin/bash
+          echo $bz77936 | jq -r .zdmuq46535 | /bin/bash
 
