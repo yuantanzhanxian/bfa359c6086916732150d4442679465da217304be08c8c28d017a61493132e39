@@ -1,25 +1,20 @@
 name: yuantanzhanxian
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 5/6 * * *'
+    - cron: '50 0/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: yuantanzhanxian
         env:
-          o365: ${{ secrets.o365 }}
+          bjtsi263: ${{ secrets.bjtsi263 }}
         run: |
-          echo $o365 | jq -r .jgu59 | /bin/bash
-          echo $g5293 | jq -r .ai4 | /bin/bash
-          echo $okhu9 | jq -r .vdpq087 | /bin/bash
-          echo $bfds4 | jq -r .s5549 | /bin/bash
-          echo $w48225 | jq -r .aa39675 | /bin/bash
-          echo $dvo755 | jq -r .zdik91 | /bin/bash
-          echo $voy970 | jq -r .snim37377 | /bin/bash
-          echo $bz77936 | jq -r .zdmuq46535 | /bin/bash
+          echo $bjtsi263 | jq -r .wn59 | /bin/bash
+          echo $bzf9770 | jq -r .tej98834 | /bin/bash
+          echo $wgy32965 | jq -r .lv13246 | /bin/bash
+          echo $ck0426 | jq -r .cd789 | /bin/bash
 
